@@ -22,5 +22,5 @@
   },
   "include": [
     "src"
-  ]
+, "../ApiExpressBackend/server.js", "src/components/NewProfile.tsx"  ]
 }

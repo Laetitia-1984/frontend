@@ -1,0 +1,31 @@
+.textHome {
+    font-family : 'Comic Neue', cursive;
+}
+
+.textHome, .comsText {
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+}
+
+.imgHome{
+    display : flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.comsText {
+    color: #eb3e72;
+}
+
+.comsText:hover {
+    color: #47c8ff;
+}
+
+.boxComs {
+    margin-bottom: 20px;
+    height: 150px;
+    border: 1px solid;
+    background-color: #d9d9d9;
+}
