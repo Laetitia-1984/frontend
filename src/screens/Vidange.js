@@ -1,3 +1,6 @@
+import ComposantText from "../components/ComposantTest";
+
+
 export const Vidange = () => {
     return (
         <main>
@@ -51,6 +54,7 @@ export const Vidange = () => {
                         <p className='text-center font-bold italic'>Prix : 99,95 euros </p>
                     </div>
                 </div>
+                <ComposantText/>
         </main>
     )
 }

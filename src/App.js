@@ -14,7 +14,6 @@ import { HomeEmploye } from './screens/HomeEmploye';
 import { Annonces } from './screens/Annonces';
 import { Commentaires } from './screens/Commentaires';
 
-
 function App() {
   return (
     <div className='container-fluid mt-5'>
@@ -33,10 +32,7 @@ function App() {
             <Route path='/commentaires' element={<Commentaires/>}/>
         </Routes>
         
-        <Footer/>  
-        <form action="../../post" method="post" className='form'>
-            <button type='submit'>Connected?</button>
-        </form>      
+        <Footer/>       
     </div>
   );
 };
