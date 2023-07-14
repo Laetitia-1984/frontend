@@ -1,3 +1,6 @@
+import { Routes, Route, NavLink } from "react-router-dom"
+import { Rendezvous } from "./Rendezvous"
+
 export const Reparations = () => {
     return (
         <main>
@@ -25,9 +28,12 @@ export const Reparations = () => {
                         <li className='ml-3'>Changement pare-brise <span className='font-bold italic'>60,95 euros</span></li>
                         <li className='ml-3'>Entretien climatisation <span className='font-bold italic'>64,95 euros</span></li>
                     </div>
-                    <div className=''>
-                        <button className='ml-5 mt-3 mb-3 mr-3 py-2 px-2 border 1px solid rounded bg-[#9747ff] text-white border'type='button'>Prendre un rendez-vous</button>
-                    </div>
+                    <div>
+                    <NavLink className='mr-2 ml-5 justify-end text-[#eb3e72] italic font-bold hover:text-[#47c8ff]' to='/rendezvous'>Prendre rendez-vous</NavLink>
+                    <Routes>
+                        <Route path='/Rendezvous' element={<Rendezvous />} />
+                    </Routes>
+                </div>
                 </div>
         </main>
     )

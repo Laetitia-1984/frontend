@@ -38,3 +38,11 @@ label {
     margin-top: 10px;
     
 }
+
+.form {
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    font-family: Cookie;
+    font-size: 40px;
+}

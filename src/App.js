@@ -13,6 +13,8 @@ import { ProfilEmployees } from './screens/ProfilEmployees';
 import { HomeEmploye } from './screens/HomeEmploye';
 import { Annonces } from './screens/Annonces';
 import { Commentaires } from './screens/Commentaires';
+import { Rendezvous } from './screens/Rendezvous';
+
 
 function App() {
   return (
@@ -30,6 +32,7 @@ function App() {
             <Route path='/homeemploye' element={<HomeEmploye/>}/>
             <Route path='/annonces' element={<Annonces/>}/>
             <Route path='/commentaires' element={<Commentaires/>}/>
+            <Route path='/rendezvous' element={ <Rendezvous/>}/>
         </Routes>
         
         <Footer/>       
