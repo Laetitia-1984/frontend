@@ -6,7 +6,7 @@ export const Commentaires = () => {
     const [form, setForm] = useState({
         nomClient: '',
         note: '',
-        descriptCom:''
+        commentaires:''
     })
 
     function onSubmit(e) {
@@ -33,7 +33,7 @@ export const Commentaires = () => {
         <div>
         <form>
                 <div>
-                    <label htmlFor='numClient'>Votre nom</label>
+                    <label htmlFor='nomClient'>Votre nom</label>
                     <input type='text' onChange={(e) => setForm({...form, nomClient: e.target.value})} />
                 </div>
                 <div>
@@ -41,8 +41,8 @@ export const Commentaires = () => {
                     <input type='text' onChange={(e) => setForm({...form, note: e.target.value})} />
                 </div>
                 <div>
-                    <label htmlFor='description'>Commentaire</label>
-                    <textarea onChange={(e) => setForm({...form, descriptCom: e.target.value})} />
+                    <label htmlFor='commentaires'>Commentaire</label>
+                    <textarea onChange={(e) => setForm({...form, commentaires: e.target.value})} />
                 </div>
                 <button className='btnSubmit rounded' onClick={onSubmit}>Envoyer</button>
             </form>
